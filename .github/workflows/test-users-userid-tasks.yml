@@ -38,5 +38,5 @@ jobs:
       - name: Deploy, invoke, remove functions
         run: |
           ~/.npm-global/bin/slsart deploy --stage $STAGE_NAME 
-          ~/.npm-global/bin/slsart invoke -s ../../testing/serverless-artillery/test-users-userid-tasks.yaml --stage $STAGE_NAME > ../../testing/results/users-userid-tasks.json
+          ~/.npm-global/bin/slsart invoke -s ../../testing/serverless-artillery/test-users-userid-tasks.yml --stage $STAGE_NAME > ../../testing/results/users-userid-tasks.json
           ~/.npm-global/bin/slsart remove --stage $STAGE_NAME
